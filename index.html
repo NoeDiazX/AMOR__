@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
+<title>Galaxia de Nuestro Amor</title>
+<meta content="Galaxia interactiva de frases de cariño 💘" name="description"/>
+<meta content="Galaxia para ti" property="og:title"/>
+<meta content="Una galaxia interactiva con palabras de cariño 💖" property="og:description"/>
+<meta content="og-cover.png" property="og:image"/>
+<link href="favicon.png" rel="icon" type="image/png"/>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+<link href="styles.css" rel="stylesheet"/></head>
+<body>
+<canvas id="galaxy-canvas"></canvas>
+<div class="pill">Te Quiero Muchote Mi Pinchecha Hermosa💛</div>
+<div class="attribution"></div>
+<div class="error" id="err"></div>
+<div class="player">
+<button id="playBtn">▶︎</button>
+<span style="font-size:12px;opacity:.9">Elije tu cancion  <b>cancion.mp3</b>💙🌹♥️</b> (Reproductor”)</span>
+<input accept="audio/*" id="pickFile" type="file"/>
+<button id="pickBtn">Elegir canción</button>
+<audio id="audio" preload="none">
+<source src="ahi_estabas_tu.mp3" type="audio/mpeg"/>
+</audio>
+</div>
+<canvas id="fx" style="position:fixed;inset:0;pointer-events:none;"></canvas>
+
+<script src="script.js"></script></body>
+</html>
